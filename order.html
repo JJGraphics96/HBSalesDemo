@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo-link">
+  <img src="assets/Images/HBGold.png" alt="HBSales" class="logo-img" />
+</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<section class="order-request-section" id="order-request">
+  <h2>Submit an Order Request</h2>
+  <p>Please fill out the form below. We'll follow up with pricing, availability, and next steps.</p>
+
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="business-name">Business Name</label>
+    <input type="text" id="business-name" name="business-name" required />
+
+    <label for="contact-name">Your Name</label>
+    <input type="text" id="contact-name" name="contact-name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="license-number">Tobacco License Number</label>
+    <input type="text" id="license-number" name="license-number" required />
+
+    <label for="products">What would you like to order?</label>
+    <textarea id="products" name="products" rows="6" placeholder="List product names, sizes, and quantities..." required></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+<script src="scripts/nav.js"></script>
+
+</body>
+</html>
