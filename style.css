@@ -338,5 +338,42 @@ button:hover {
   border-radius: 4px;
   font-size: 1em;
 }
+.video-highlight {
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.video-highlight h2 {
+  margin-bottom: 15px;
+  color: #0a0f2c;
+}
+.video-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.video-wrapper video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.custom-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.custom-play-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 
 

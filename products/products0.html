@@ -15,35 +15,45 @@
 </a>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#gallery">Catalog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="../#gallery">Catalog</a></li>
+            <li><a href="../#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
+<section class="video-highlight">
+  <h2>NEW AT HB SALES</h2>
+  <div class="video-wrapper">
+    <video id="promo-video" preload="metadata" playsinline>
+      <source src="../assets/Videos/0702.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="custom-play-button" onclick="playVideo()">▶</div>
+  </div>
+</section>
+<script>
+  function playVideo() {
+    const video = document.getElementById('promo-video');
+    const button = document.querySelector('.custom-play-button');
+    video.play();
+    video.setAttribute('controls', 'controls');
+    button.style.display = 'none';
+  }
+</script>
 
 
 <div class="main-wrapper">
+ <section class="section">
+  <h2>Our Hot Products</h2>
+  <p class="category-note">Browse our product list by brand. Reach out for availability or custom orders.</p>
+<div class="brand-section">
+    <h3>Test Brand</h3>
+    <ul class="product-list">
+      <li>Test Product</li>
+    </ul>
+  </div>
+</section>
 
-    <header class="header">
-        <h1>These are where your new products will be!</h1>
-        <p>This is where your customers will be educated and updated on your catalogue</p>
-    </header>
-
-    <section class="gallery-section">
-        <h2>Project Gallery</h2>
-        <div class="gallery">
-            <img src="https://placehold.co/600x400/0a0f2c/9dc4ff?text=Main+Image" alt="Main Image" />
-            <img src="https://placehold.co/400x300/0a0f2c/9dc4ff?text=Detail+1" alt="Detail 1" />
-            <img src="https://placehold.co/400x300/0a0f2c/9dc4ff?text=Detail+2" alt="Detail 2" />
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>More Product Details</h2>
-        <p>More detailed info about the new products at HB Sales. assuring quality, </p>
-    </section>
-
-</div>
+  </div>
 
 <footer class="site-footer">
     <p>2025 HB Sales. All rights reserved.</p>
@@ -51,6 +61,5 @@
 
 <script src="../scripts/nav.js"></script>
 
-<a href="../order.html" class="floating-cta" title="Submit an Order Request">📩 Submit Order</a>
 </body>
 </html>
